@@ -1,0 +1,101 @@
+/* Thiết lập cơ bản cho thanh điều hướng */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: red;
+    display: flex;
+    position: fixed; /* Cố định thanh điều hướng */
+    justify-content: center; /* Căn giữa các mục */
+    align-items: center;
+    height: 50px;
+    width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+    font-size: 1.25em;
+}
+.nava{
+    background-color:olive;
+    display: flex;
+    position: fixed; /* Cố định thanh điều hướng */
+    justify-content: center; /* Căn giữa các mục */
+    align-items: center;
+    height: 50px;
+    width: 60%; /* Chiếm toàn bộ chiều rộng màn hình */
+}
+.end{
+    background-color:gray;
+    display: flex;
+    position: fixed; /* Cố định thanh điều hướng */
+    justify-content: center; /* Căn giữa các mục */
+    align-items: center;
+    height: 50px;
+    width: 50%; /* Chiếm toàn bộ chiều rộng màn hình */
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 1.25em;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 20px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: palevioletred;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(174, 172, 172);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 1em;
+}
+
+.dropdown-content a {
+    float: none;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    padding: 20px;
+    font-size: 2em;
+}
